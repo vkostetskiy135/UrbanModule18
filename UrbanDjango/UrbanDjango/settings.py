@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'example2',
     'example3',
     'task2',
+    'task3',
 ]
 
 MIDDLEWARE = [
@@ -59,7 +60,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [BASE_DIR / 'templates',
-                 BASE_DIR / 'templates' / 'task2'],
+                 BASE_DIR / 'templates' / 'task2',
+                 BASE_DIR / 'templates' / 'third_task'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
