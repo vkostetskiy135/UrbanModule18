@@ -21,6 +21,7 @@ from django.views.generic import TemplateView
 from task2.views import func_template, ClassTemplate
 from task3.views import main_page, cart_page, games_page
 from task4.views import t4_main_page, t4_cart_page, t4_games_page
+from task5.views import sign_up_by_django, sign_up_by_html
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -31,5 +32,7 @@ urlpatterns = [
     path('platform/games/', games_page, name='games_page'),
     path('t4_platform/', t4_main_page, name='t4_main_page'),
     path('t4_platform/t4_cart/', t4_cart_page, name='t4_cart_page'),
-    path('t4_platform/t4_games/', t4_games_page, name='t4_games_page')
+    path('t4_platform/t4_games/', t4_games_page, name='t4_games_page'),
+    path('', sign_up_by_html, name='sign_up_by_html'),
+    path('django_sign_up', sign_up_by_django, name='sign_up_by_django'),
 ]
